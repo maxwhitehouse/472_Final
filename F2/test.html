@@ -1,0 +1,41 @@
+<div id="intro-modal" class="modal-overlay">
+  <div class="modal-box">
+    <h2>Maui Wildfire Recovery as a Spatial Externality Game</h2>
+
+    <p>
+      This interactive map visualizes a simple game-theoretic model of wildfire
+      recovery and compliance in three Maui locations: Lahaina, Waiohuli, and Kahului.
+    </p>
+
+    <p>
+      Each 3×3 grid represents a small neighborhood. Clicking a grid opens sliders
+      for that location. The model evaluates whether compliance is the dominant strategy
+      using the condition:
+    </p>
+
+    <p><b>Lθ + pF &gt; c</b></p>
+
+    <p>Where:</p>
+    <ul>
+      <li><b>L</b> = expected wildfire loss</li>
+      <li><b>θ</b> = mitigation effectiveness</li>
+      <li><b>p</b> = enforcement probability</li>
+      <li><b>F</b> = penalty for non-compliance</li>
+      <li><b>c</b> = cost of compliance</li>
+    </ul>
+
+    <h3>How to use this map</h3>
+    <ol>
+      <li>Click one of the three grids.</li>
+      <li>Adjust the sliders for that location.</li>
+      <li>Watch the grid update color based on the equilibrium.</li>
+      <li>Use the basemap switcher or zoom buttons to explore the map.</li>
+    </ol>
+
+    <div class="modal-buttons">
+      <button id="close-intro">Start Exploring</button>
+    </div>
+  </div>
+</div>
+
+<button id="help-button" class="help-button">Help / Tutorial</button>
